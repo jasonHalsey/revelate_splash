@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="{{ settings.color_button }}">
   <link rel="canonical" href="{{ canonical_url }}">
+  <script src="https://use.typekit.net/rno1byv.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
 
   {% if settings.favicon != blank %}
     <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
@@ -35,7 +37,6 @@
   {% include 'google-fonts' %}
 
 
-
   <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
 
   {% if template.directory == 'customers' %}
@@ -56,13 +57,10 @@
 
 
   <div class="page-container" id="PageContainer">
-
     <main class="main-content" id="MainContent" role="main">
       {{ content_for_layout }}
     </main>
-
-
-
   </div>
+
 </body>
 </html>

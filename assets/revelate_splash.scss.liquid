@@ -1,7 +1,101 @@
+//Fonts
+$mainHeaderFont:'din-2014-narrow';
+$mainBodyFont: 'din-2014';
+
+//Colors
+$gold: rgba(141,115,74,1.0);
+$dot: #FF9D6C;
+$white: #FFFFFF;
+
+
 body{
 	background: url('https://cdn.shopify.com/s/files/1/1773/1623/files/Hindu-Goddess-compressed1_1.jpg?597560292747543446') no-repeat center center fixed; ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	margin:0;
+	padding:0;
+	font-size: 18px;
+}
+
+div.logo_container{
+	width:52%;
+	position: absolute;
+	right:0;
+	top:17%;
+	display:block;
+	img{
+		width:100%;
+		height:auto;
+	}
+}
+
+div.mainContent_container{
+	position:absolute;
+	right:0;
+	left:0;
+	bottom: 1.25em;
+}
+
+div.left_content_container{
+	width:50%;
+	position: absolute;
+	bottom: 0;
+	left:0;
+	padding: 1.5em 1.5em 1.5em 3.0em;
+	font-family: $mainBodyFont;
+	font-weight:400;
+	color: $gold;
+	a{
+		color: $dot;
+		text-decoration: none;
+		transition: 0.25s all linear;
+		&:hover{
+			color: $gold;
+		}
+	}
+	span{
+		display:block;
+	}
+	.light-text{
+		color:$white;
+	}
+	@media (max-width: 600px) {
+	  width:100%;
+	  text-align: center;
+	  position: relative;
+	  padding:1.0em 0;
+	  background-color: rgba(0,0,0,0.6);
+	}
+}
+
+div.right_content_container{
+	width:50%;
+	position: absolute;
+	bottom: 0;
+	right:0;
+	padding: 1.5em 3.0em 1.5em 1.5em;
+	font-family: $mainBodyFont;
+	font-weight:400;
+	font-size: 1.25em;
+	color: $gold;
+	text-align: right;
+	h2{
+		font-family: $mainHeaderFont;
+		color:$white;
+		font-weight: 300;
+		font-size:4.0em;
+		line-height:1.0em;
+		margin: 0;
+		padding:0;
+	}
+	@media (max-width: 600px) {
+	  width:100%;
+	  position: relative;
+	  text-align: center;
+	  padding:1.0em 0;
+	  background-color: rgba(0,0,0,0.6);
+	}
+
 }
